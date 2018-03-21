@@ -1,0 +1,35 @@
+
+Date: 23 Feb 2018
+We started off by reading the documents and decided to implement the cell,bug,marker,world. 
+
+
+Date: 24 feb 2018
+
+We started off by building the bug class. We named it bug.h. According to the UML diagram for bug in spec.pdf from the professor we made some attributes private and public according to it. Accept for the kill method we created all the other methods from the UML diagram. We also did the same for cell class naming it cell.h. In the constructor Cell(char symb) we put a lot of if and elseif conditions to determine the type of the cell.
+
+Date: 25 feb 2018
+
+We implemented the marker class naming it marker.h. Again we sticked to the direction of UML diagram. We also did some error handling and debugging for all the classes we implmented previously and today.
+
+
+Date: 26 feb 2018
+
+We commented out our built classes for better undestanding of the code. We also started off with the world class. We created the world.h file and world.cpp file for specification and implementation. We implemented uptil the load function.
+
+Date: 27 feb 2018
+
+We implemented the rest of the world class and did error checking for methods. 
+
+Date: 01 March 2018
+
+We started writing test cases and managed to make Markertest and partially BugTest.
+
+Date: 03 March 2018
+
+We completed all the test files and did the error handling for everything.
+
+Date: 04 March 2018
+
+Made the makefile.
+
+
