@@ -2,7 +2,8 @@
 PHASE 2
 -rearranged folder structure
 -implemented data types (tcolor, tdirection etc.)
--
+-created header files for all instruction classes
+-implemented instruction classes (execute, parse)
 
 
 
