@@ -31,8 +31,8 @@ public:
         
         return this->board[i][j];
     }
-    std::pair<int, int> adjacent(int dir, std::pair<int, int> pos);
-    int other_color (int col) {return 1 - col;}
+    tposition adjacent(tdirection dir, tposition pos);
+    int other_color (tcolor col) {return 1 - col;}
     int red_food();
     int black_food();
     int red_count();
@@ -46,7 +46,7 @@ public:
         }
         else {} // We need to decide something!
     }
-    void set_marker_at(std::pair<int, int> pos, int col, int mark);
+    void set_marker_at(tposition pos, tcolor col, int mark);
     void clear_marker_at(std::pair<int, int> pos, int col, int mark);
     bool check_marker_at(std::pair<int, int> pos, int col, int mark);
     bool check_other_marker_at(std::pair<int, int> pos, int col);

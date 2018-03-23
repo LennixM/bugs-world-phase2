@@ -47,10 +47,10 @@ void World::load(string filenames){
     inFile.close();
 }
 
-pair<int, int> World::adjacent(int dir, pair<int, int> pos){
+tposition World::adjacent(tdirection dir, tposition pos){
     // This function taken from bug.pdf page 3!
     
-    int i = pos.first, j = pos.second;
+    int i = pos[0], j = pos[1];
     pair<int, int> tmp;
 
     if ((i < 0 || j < 0) || (i >= this->Width || j >= this->Length)){

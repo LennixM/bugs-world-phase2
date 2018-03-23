@@ -1,0 +1,1 @@
+make: *** No rule to make target `tests/BugTest.cpp', needed by `test_bug'.  Stop.

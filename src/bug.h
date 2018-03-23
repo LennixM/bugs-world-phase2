@@ -7,11 +7,11 @@
 class Bug {
    
 private:
-    int color = -1; // 0: black, 1: red
-    int state = -1; // 0 ... 9999
+    tcolor color = -1; // 0: black, 1: red
+    tstate state = -1; // 0 ... 9999
     int prog_id = -1;
-    std::pair <int, int> pos; // Using pair object as pos.
-    int direction = -1; // 0 ... 5
+    tposition pos; // Using pair object as pos.
+    tdirection direction = -1; // 0 ... 5
     int resting = -1;
     int remaining_rest = 0;
     bool food = false;
@@ -19,7 +19,7 @@ private:
 public:
     Bug () {}; // Empty Constructor
     ~Bug () {};
-    Bug(int i_col, int i_progid, int i_resting){
+    Bug(tcolor i_col, int i_progid, int i_resting){
         /*
          * Error handling for invalid arguments.
          * Checking i_col and i_resting
@@ -57,10 +57,10 @@ public:
     }
     
     int get_progid() {return this->prog_id;}
-    int get_color() {return this->color;}
+    tcolor get_color() {return this->color;}
     
-    int get_state() {return this->state;}
-    void set_state(int new_state) {
+    tstate get_state() {return this->state;}
+    void set_state(tstate new_state) {
         /*
          * Error handling for invalid arguments.
          * Checking new_state
@@ -73,8 +73,8 @@ public:
         this->state = new_state;
     }
     
-    int get_direction() {return this->direction;}
-    void set_direction(int new_direction) {
+    tdirection get_direction() {return this->direction;}
+    void set_direction(tdirection new_direction) {
         if (new_direction > 5 || new_direction < 0){
             throw std::invalid_argument("In \"" + std::string(__FILE__) + \
                                          "\" line:" + std::to_string(__LINE__)\
@@ -82,8 +82,8 @@ public:
         }
         this->direction = new_direction;
     }
-    std::pair <int,int> get_position() {return this->pos;}
-    void set_position(std::pair <int, int> &new_pos) {
+    tposition get_position() {return this->pos;}
+    void set_position(tposition new_pos) {
         if (new_pos.first < 0 || new_pos.second < 0){
             throw std::invalid_argument("In \"" + std::string(__FILE__) + \
                                          "\" line:" + std::to_string(__LINE__)\
