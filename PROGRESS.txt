@@ -1,4 +1,18 @@
 
+PHASE 2
+-rearranged folder structure
+-implemented data types (tcolor, tdirection etc.)
+-
+
+
+
+
+
+
+
+
+___________________________
+PHASE 1
 Date: 23 Feb 2018
 We started off by reading the documents and decided to implement the cell,bug,marker,world. 
 

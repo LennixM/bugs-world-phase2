@@ -18,7 +18,7 @@
 class I_mark{
     private:
         int m;
-        int tstate;
+        tstate tstate;
        
     public:
         void execute(Bug b);

@@ -17,7 +17,7 @@
 
 class I_drop{
     private:
-        int state;
+        tstate state;
 
     public:
         void execute(Bug b);

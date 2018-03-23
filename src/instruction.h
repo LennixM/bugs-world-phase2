@@ -20,8 +20,8 @@ using namespace std;
 class Instruction: public World //should inherit from Program
 {
     World w;
-    void execute(Bug b);
-    void parse(string args);
+    virtual void execute(Bug b);
+    virtual void parse(string args);
 };
 
 

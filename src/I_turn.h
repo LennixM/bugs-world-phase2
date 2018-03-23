@@ -17,8 +17,8 @@
 
 class I_turn{
     private:
-        int leftRight;
-        int state;
+        tleftright leftRight;
+        tstate state;
     public:
         void execute(Bug b);
         void parse(string args);

@@ -19,9 +19,9 @@ using namespace std;
 
 class I_flip: public Instruction{
     private:
-        int p;
-        int xtate;
-        int ystate;
+        tposition p;
+        tstate xtate;
+        tstate ystate;
         int seed;
     public:
         void execute(Bug b);

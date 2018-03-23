@@ -19,7 +19,7 @@ using namespace std;
 class I_umark{
     private:
         int m;
-        int tstate;
+        tstate tstate;
        
     public:
         void execute(Bug b);
