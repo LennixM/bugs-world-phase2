@@ -4,22 +4,13 @@
  * and open the template in the editor.
  */
 
-/* 
- * File:   main.cpp
- * Author: lorik
- *
- * Created on March 22, 2018, 4:53 PM
- */
-
-#include <cstdlib>
-
+#include "I_unmark.h"
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
+void Instruction::execute(Bug b){
+    
+};
 
-    return 0;
-}
-
+void Instruction::parse(string args){
+    
+};

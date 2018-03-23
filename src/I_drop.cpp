@@ -4,22 +4,14 @@
  * and open the template in the editor.
  */
 
-/* 
- * File:   main.cpp
- * Author: lorik
- *
- * Created on March 22, 2018, 4:53 PM
- */
-
-#include <cstdlib>
-
+#include "I_drop.h"
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
 
-    return 0;
-}
+void Instruction::execute(Bug b){
+    
+};
 
+void Instruction::parse(string args){
+    
+};
