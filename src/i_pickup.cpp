@@ -7,7 +7,9 @@ void I_pickup::execute(Bug b) {
 }
 
 void I_pickup::parse(string args) {
-    
+    string *argarr = strtok(args," ");
+    this->x = (tstate)*(argarr);
+    this->y = (tstate)*(argarr+1);
 }
 
 

@@ -10,8 +10,7 @@ private:
     int bits; // 0-5 bits for black, 6-12 bits for red
     
 public:
-    typedef int tmark;
-    typedef int tcolor;
+    
     ~Marker() {}
     Marker() {this->bits = 0;};
     int get_marker() {return bits;}
