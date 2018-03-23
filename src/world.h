@@ -1,3 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   world.h
+ * 
+ *
+ * Created on March 22, 2018, 5:05 PM
+ */
+
 #ifndef WORLD_H
 #define WORLD_H
 
@@ -31,8 +44,8 @@ public:
         
         return this->board[i][j];
     }
-    tposition adjacent(tdirection dir, tposition pos);
-    int other_color (tcolor col) {return 1 - col;}
+    std::pair<int, int> adjacent(int dir, std::pair<int, int> pos);
+    int other_color (int col) {return 1 - col;}
     int red_food();
     int black_food();
     int red_count();
@@ -46,7 +59,7 @@ public:
         }
         else {} // We need to decide something!
     }
-    void set_marker_at(tposition pos, tcolor col, int mark);
+    void set_marker_at(std::pair<int, int> pos, int col, int mark);
     void clear_marker_at(std::pair<int, int> pos, int col, int mark);
     bool check_marker_at(std::pair<int, int> pos, int col, int mark);
     bool check_other_marker_at(std::pair<int, int> pos, int col);
@@ -54,4 +67,5 @@ public:
 
 
 #endif /* WORLD_H */
+
 

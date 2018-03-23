@@ -1,16 +1,29 @@
-#ifndef __instruction__
-#define __instruction__
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-#include <string>
+/* 
+ * File:   instruction.h
+ * 
+ *
+ * Created on March 22, 2018, 4:54 PM
+ */
 
-class Instruction {
-public:
-  virtual void execute(Bug b);
+#ifndef INSTRUCTION_H
+#define INSTRUCTION_H
+#include "world.h"
 
-  virtual void parse(std::string args);
+using namespace std; 
 
-protected:
-  World w;
+class Instruction: public World //should inherit from Program
+{
+    World w;
+    void execute(Bug b);
+    void parse(string args);
 };
 
-#endif
+
+#endif /* INSTRUCTION_H */
+

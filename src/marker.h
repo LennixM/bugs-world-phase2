@@ -1,3 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   marker.h
+ *
+ *
+ * Created on March 22, 2018, 5:04 PM
+ */
+
 #ifndef MARKER_H
 #define MARKER_H
    
@@ -10,8 +23,6 @@ private:
     int bits; // 0-5 bits for black, 6-12 bits for red
     
 public:
-    typedef int tmark;
-    typedef int tcolor;
     ~Marker() {}
     Marker() {this->bits = 0;};
     int get_marker() {return bits;}
